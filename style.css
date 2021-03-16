@@ -235,7 +235,6 @@ body{
     background-color: #d4d4d4;
 }
 
-
 h2{
     font-size: 64px;
     font-family: "Futura PT", Arial;
@@ -343,4 +342,397 @@ h2{
     margin: 30px 0 20px 0;
     max-height: 46px;
     transition: .33s;
+}
+
+.favorites-section{
+    margin: 0 auto 150px auto;
+}
+
+.favorites-name{
+    margin-bottom: 30px;
+}
+
+.favorites-list{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    flex-basis: 100%;
+    min-height: 460px;
+}
+
+.main-item{
+    background-color: #151515;
+    background-position: 93% 90%;
+    background-repeat: no-repeat;
+    background-image: url("img/subtract.png");
+    min-width: 100px;
+    min-height: 100px;
+    flex: 0 1 53%;
+    margin: 10px;
+    display: flex;
+    transition: 0.3s;
+    flex-wrap: wrap;
+}
+
+.side-items{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    flex: 0 1 47%;
+    transition: 0.3s;
+}
+
+.main-item-text{
+    flex: 0 1 100%;
+    align-self: flex-start;
+    margin: 55px 60px 0 0;
+    text-align: right;
+    transition: .3s;
+}
+
+.main-item-text > p{
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 46px;
+    margin: 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.main-item-text > article{
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.main-item-img{
+    margin: 0;
+    flex: 0 1 65%;
+    height: 269px;
+    align-self: flex-end;
+    min-height: 70px;
+    min-width: 100px;
+}
+
+.item{
+    background: #151515;
+    min-height: 100px;
+    min-width: 100px;
+    flex: 0 1 45%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.33s;
+}
+
+.item > p {
+    color: #FFFFFF;
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.company-description{
+    background-color: #F2F2F2;
+    transition: .33s;
+}
+.company-text-information{
+    margin: 0 auto;
+}
+
+.short-description-company{
+    flex-basis: 100%;
+    padding: 51px 0 61px 0;
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-size: 24px;
+    color: #000000;
+    transition: .33s;
+    margin: 0;
+}
+
+.advantages-section{
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .33s;
+    margin: 60px auto 30px auto;
+}
+
+.advantages-header{
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    color: #000000;
+    text-align: center;
+    transition: .33s;
+    margin: 0;
+}
+
+.advantages-list{
+    list-style: none;
+    display: flex;
+    flex: 0 1 100%;
+    min-height: 230px;
+    justify-content: space-between;
+    margin: 63px 0 0 0;
+    padding: 0;
+    transition: .33s;
+}
+
+.advantages-item{
+    min-width: 200px;
+    min-height: 150px;
+    max-height: 219px;
+    max-width: 331px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 100%;
+    background: linear-gradient(to top, #F2F2F2 60%, transparent 40%);
+    transition: .3s;
+}
+
+.advantages-item.open{
+    position: relative;
+    min-width: 200px;
+    min-height: 150px;
+    max-height: 360px;
+    max-width: 331px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 100%;
+    background: linear-gradient(to top, #F2F2F2 65%, transparent 35%);
+    transition: .9s;
+}
+
+.advantage-text{
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 31px;
+    margin: 5px 0 0 0;
+    text-align: center;
+    transition: .33s;
+}
+
+.content-details{
+    visibility: hidden;
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.subtract-details{
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url("img/subtract-details.svg") no-repeat center center;
+    background-size: contain;
+    bottom: 8px;
+    flex-shrink: 0;
+}
+
+.overview-section{
+    display: flex;
+    flex-basis: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 13px;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+.trailer{
+    flex: 0 1 100%;
+    min-width: 300px;
+    min-height: 240px;
+    max-width: 1157px;
+    max-height: 642px;
+    padding: 3px;
+    margin-top: 78px;
+}
+
+.video-trailer{
+    width: 100%;
+    height: 100%;
+}
+
+.newsletter-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 100%;
+    max-height: 658px;
+    background:white url("img/nlo.png") no-repeat 5% 0%;
+    transition: .33s;
+    margin: 0 auto;
+}
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 151px;
+    margin-bottom: 197px;
+    transition: .33s;
+}
+
+.newsletter-label{
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.newsletter-email{
+    flex: 1 1 100%;
+    height: 40px;
+    padding: 8px;
+    margin: 20px 5px 0 5px;
+    min-width: 415px;
+    border: 1px black solid;
+    border-radius: 0px;
+}
+.submit-newsletter{
+    height: 45px;
+    width: 252px;
+    font-size: 18px;
+    color: white;
+    background: #000000;
+    margin-bottom: auto;
+    outline: none;
+    border: none;
+    padding: 11px 39px;
+    flex: 0 1 100%;
+    font-family: "Futura PT", Arial;
+    margin-top: 30px;
+}
+
+footer{
+    background-color: #151515;
+}
+
+.footer-section{
+    display: flex;
+    min-height: 477px;
+    min-width: 320px;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+    margin: 0 auto;
+}
+
+.footer-main-information{
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 100%;
+    transition: .3s;
+}
+
+.footer-link-lists{
+    display: flex;
+    flex: 0 1 100%;
+    justify-content: flex-end;
+}
+
+.footer-main-information>img{
+    flex-shrink: 0;
+    width: 180px;
+    height: 65px;
+}
+
+.footer-link-lists ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    flex: 0 1 20%;
+}
+
+.footer-link-lists ul>li{
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    transition: .3s;
+    margin-bottom: 10px;
+}
+
+.footer-link-lists ul>li:first-child{
+    margin-bottom: 16px;
+    font-weight:bold;
+}
+
+.social-networks{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-family: FontAwesome Brand;
+    width: 55px;
+    height: 28px;
+    margin: 16px 0;
+}
+
+.social-networks>a{
+    text-decoration: none;
+}
+
+.social-networks>a>i{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.copyright{
+    font-family: Futura PT, Arial;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #484848;
+    flex: 0 1 100%;
+    margin-top: 34px;
 }
