@@ -282,3 +282,65 @@ h2{
     position: relative;
     min-width: 0;
 }
+
+.slider-container::before{
+    content: " ";
+    position: absolute;
+    top:0;
+    left:-3%;
+    height: 100%;
+    width:200px;
+    background: linear-gradient(to right, #000000 0%, transparent 90%);
+    z-index: 5;
+}
+
+.slider-container::after{
+    content: " ";
+    position: absolute;
+    top:0;
+    right:-3%;
+    height: 100%;
+    width:200px;
+    background: linear-gradient(to left, #000000 0%, transparent 90%);
+    z-index: 5;
+}
+
+.slide{
+    flex-basis: 100%;
+    max-width: 856px;
+    min-height: 200px;
+    max-height: 319px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .33s;
+}
+
+.offroad-series{
+    background: url("img/Rectangle_2.png") no-repeat;
+    background-size: 100% 100%;
+}
+.road-series{
+    background: url("img/Rectangle_3.png") no-repeat;
+    background-size: 100% 100%;
+}
+.street-series{
+    background: url("img/Rectangle_4.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+.bike-img{
+    flex-basis: 100%;
+    min-width: 50px;
+    min-height: 50px;
+    max-height: 184px;
+    margin-top: 44px;
+    transition: .33s;
+}
+
+.bike-name{
+    margin: 30px 0 20px 0;
+    max-height: 46px;
+    transition: .33s;
+}
