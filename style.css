@@ -211,7 +211,7 @@ body{
 
     border-radius: 20px;
     background-color: #ECEFF1;
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
 
     transition-duration: .3s;
 }
@@ -602,7 +602,7 @@ h2{
     align-items: center;
     flex: 1 1 100%;
     max-height: 658px;
-    background:white url("img/nlo.png") no-repeat 5% 0%;
+    background:white url("img/nlo.png") no-repeat 5% 0;
     transition: .33s;
     margin: 0 auto;
 }
@@ -632,7 +632,7 @@ h2{
     margin: 20px 5px 0 5px;
     min-width: 415px;
     border: 1px black solid;
-    border-radius: 0px;
+    border-radius: 0;
 }
 .submit-newsletter{
     height: 45px;
@@ -735,4 +735,281 @@ footer{
     color: #484848;
     flex: 0 1 100%;
     margin-top: 34px;
+}
+
+@media screen and (max-width: 1023px){
+    .poster-section{
+        height: 700px;
+    }
+
+    .content-inner-wrapper{
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .heading{
+        font-size: 56px;
+    }
+    h2{
+        font-size: 56px;
+    }
+
+    .bike-img{
+        max-height: 134px;
+    }
+
+    .bike-name{
+        max-height: 38px;
+    }
+
+    .favorites-list{ flex-wrap: wrap; }
+    .main-item {
+        flex-basis: 100%;
+    }
+    .side-items{
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+    }
+
+    .main-item-text{
+        margin: 25px 25px 0 0;
+    }
+
+    .main-item-img{
+        flex: 0 1 50%;
+        height: 200px;
+    }
+
+    .short-description-company{
+        font-size: 20px;
+
+    }
+
+    .advantages-item{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .advantages-item.open{
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .advantage-text{
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .submit-newsletter{
+        margin-top: 30px;
+    }
+
+    .footer-link-lists ul>li{
+        font-size: 14px;
+    }
+    .slider-container::before{
+        display: none;
+    }
+
+    .slider-container::after{
+        display: none;
+    }
+
+    .company-name{
+        margin-top: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .poster-section{
+        height: 500px;
+    }
+
+    .search-container{
+        flex-basis: 15%;
+    }
+
+    .search{
+        width: 50px;
+    }
+
+    .content-inner-wrapper{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .heading{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 38px;
+    }
+    .company-name{
+        font-size: 20px;
+    }
+
+    .logo{
+        min-width: 50px;
+    }
+    .cart{
+        min-width: 20px;
+    }
+
+    .bike-img{
+        max-height: 100px;
+    }
+
+    .bike-name{
+        max-height: 24px;
+    }
+
+    .main-item-text{
+        margin: 5px 5px 0 0;
+    }
+
+    .main-item-img{
+        min-width: 280px;
+        max-width: 310px;
+        height: 150px;
+    }
+
+    .main-item-text > p{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .main-item-text > article{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .menu-burger-container{
+        min-width: 20px;
+        margin-left: 0;
+    }
+    .side-items{
+        flex-wrap: wrap;
+        flex-basis:100%;
+    }
+    .main-item, .item { height: 270px; }
+
+    .item{
+        background-image: url("img/subtract.png");
+        background-repeat: no-repeat;
+        background-position: 92% 90%;
+        flex: 1 1 45%;
+    }
+
+    .item > p{
+        font-size: 18px;
+    }
+    .short-description-company{
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .advantages-list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .advantages-item{
+        margin: 10px;
+    }
+
+    .advantages-item.open{
+        margin: 10px;
+    }
+
+    .advantage-text{
+        font-size: 16px;
+    }
+    .submit-newsletter{
+        margin-top: 20px;
+    }
+
+    .slider-container::before{
+        left:-10%;
+    }
+
+    .slider-container::after{
+        right:-10%;
+    }
+    .footer-main-information{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .newsletter-email{
+        min-width: 290px;
+    }
+
+    .footer-link-lists{
+        flex-wrap: wrap;
+    }
+
+    .footer-link-lists ul{
+        margin: 10px;
+        flex: 0 1 40%;
+    }
+    .social-networks{
+        align-self: center;
+    }
+}
+
+@font-face {
+    font-family: FontAwesome Solid;
+    src: url("fonts/fa-solid-900.eot");
+    src: url('fonts/fa-solid-900.eot?#iefix') format('embedded-opentype'),
+    url("fonts/fa-solid-900.woff2") format("woff2"),
+    url('fonts/fa-solid-900.woff') format('woff'),
+    url('fonts/fa-solid-900.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: FontAwesome Brand;
+    src: url("fonts/fa-brands-400.eot");
+    src: url('fonts/fa-brands-400.eot?#iefix') format('embedded-opentype'),
+    url("fonts/fa-brands-400.woff2") format("woff2"),
+    url('fonts/fa-brands-400.woff') format('woff'),
+    url('fonts/fa-brands-400.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/Futura_pt_light.eot');
+    src: url('fonts/Futura_pt_light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Futura_pt_light.woff2') format('woff2'),
+    url('fonts/Futura_pt_light.woff') format('woff'),
+    url('fonts/Futura_pt_light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT';
+    src: url('fonts/FuturaPT-Bold.eot');
+    src: url('fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FuturaPT-Bold.woff2') format('woff2'),
+    url('fonts/FuturaPT-Bold.woff') format('woff'),
+    url('fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura PT Book';
+    src: url('fonts/FuturaPT-Book.eot');
+    src: url('fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+    url('fonts/FuturaPT-Book.woff2') format('woff2'),
+    url('fonts/FuturaPT-Book.woff') format('woff'),
+    url('fonts/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
