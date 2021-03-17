@@ -9,10 +9,10 @@ var hintOutput = document.getElementsByClassName("subtract-details");
 
 for (var i = 0; i < hintOutput.length; i++) {
     hintOutput[i].addEventListener('click', function () {
-        var content = this.nextElementSibling;
+        // var content = this.nextElementSibling;
         var parent = this.parentElement;
         this.style.display = 'none';
-        content.style.visibility = 'visible';
+        // content.style.visibility = 'visible';
         parent.classList.add('open');
     });
 }
