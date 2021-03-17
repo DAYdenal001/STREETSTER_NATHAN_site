@@ -497,23 +497,26 @@ h2 {
 }
 
 .advantages-list {
-    list-style: none;
     display: flex;
     flex: 0 1 100%;
-    min-height: 230px;
+    min-height: 250px;
     justify-content: space-between;
+    align-items: flex-start;
     margin: 63px 0 0 0;
     padding: 50px 0 0 0;
     transition: .33s;
 }
 
 .advantages-item {
-    flex: 0 0 auto;
-    padding: 40px 30px;
+    flex: 0 1 25%;
+    margin-top: 100px;
+    padding: 30px 30px 0 30px;
     text-align: center;
-    width: 25%;
     max-height: 219px;
-    display: block;
+    max-width: 331px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     background: #F2F2F2;
     transition: .3s;
@@ -531,8 +534,9 @@ h2 {
 
 .advantage-img{
     position: absolute;
-    top: -80px;
+    top: -70px;
     left: 30%;
+    right: 30%;
 }
 
 .advantage-text {
@@ -541,7 +545,7 @@ h2 {
     font-weight: 600;
     font-size: 24px;
     line-height: 31px;
-    margin: 30px 0;
+    margin: 30px 0 10px 0;
     transition: .3s;
 }
 
@@ -567,7 +571,7 @@ h2 {
     background: url("img/subtract-details.svg") no-repeat center center;
     background-size: contain;
     bottom: 8px;
-    flex-shrink: 0;
+    left: 50%;
 }
 
 .overview-section {
@@ -803,7 +807,6 @@ footer {
 
     .advantage-text {
         font-size: 20px;
-        margin: 10px 0;
     }
 
     .submit-newsletter {
@@ -924,17 +927,19 @@ footer {
     }
 
     .advantages-list {
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .advantages-item {
-        margin: 50px 10px 10px 10px;
+        margin: 50px 10px 50px 10px;
         padding-top: 25px;
+        flex: 0 1 20%;
     }
 
     .advantages-item.open {
-        margin: 80px 10px 10px 10px;
+        margin: 50px 10px 30px 10px;
         padding-top: 50px;
     }
 
